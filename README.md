@@ -1,22 +1,29 @@
-# Checkpoints
-### How To Sync Quickly
-##### In versions 3+ you can sync a fresh chain from 0 much quicker by loading "checkpoints" with your daemon.
+# **Checkpoints**
+Since versions 3+ you can sync a fresh chain from 0 much quicker by loading "checkpoints" with your daemon.
 
-### Setup
+## **How to synchronise the blockchain faster and better**
+
+Download the complete checkpoints list from the [BLOC-checkpoints GitHub repository](https://github.com/furiousteam/BLOC-checkpoints)
+**This list is updated automatically every day at 12 am (UTC+1)**
+
+## **Setup**
 
 - Right click [this link](https://raw.githubusercontent.com/furiousteam/BLOC-checkpoints/master/checkpoints.csv) and choose `Save link as...` to download the latest checkpoints.csv.
 - Place checkpoints.csv in the same folder as your BLOCd daemon
 - You can get BLOCd from here if you don't have it already: https://bloc.money/download
 - Make sure you shut down any GUI wallets, or any other instances of BLOCd.
 
-### Usage
+It should looks like this:
+
+![BLOC Folder](https://wiki.bloc.money/service-operators/images/list.png)
+
+### **Usage**
 
 #### Windows
 
 - First, open a command prompt in the same directory as BLOCd.
 - This can easily be done by moving to the BLOCd directory in Windows Explorer, then typing `cmd` in the search bar and hitting enter:
 
-![Opening cmd](https://i.imgur.com/QoNwYtB.png)
 - Finally, type `BLOCd.exe --load-checkpoints checkpoints.csv` in the command prompt.
 
 #### Linux, Apple
@@ -25,11 +32,11 @@
 - You can use the `cd` command to change to this directory. For example, `cd Downloads/BLOC`
 - Alternatively, your file manager may provide the ability to open a terminal in your current directory. Navigate to the folder with BLOCd in, and try right clicking, to see if you can open a terminal there:
 
-![Opening terminal](https://i.imgur.com/Rd5TmQc.png)
+![Open in terminal](https://wiki.bloc.money/service-operators/images/open-in-terminal.png)
 
 - Finally, type `./BLOCd --load-checkpoints checkpoints.csv` in the terminal.
 
-### Expected Output
+### **Expected Output**
 
 If you did the steps correctly, you should see something like this output.
 
@@ -43,11 +50,17 @@ If you did the steps correctly, you should see something like this output.
 2019-Jan-09 07:09:16.784083 INFO    Core initialized OK
 ```
 
+![Checkpoints](https://wiki.bloc.money/service-operators/images/checkpoints-1.png)
+
 - BLOCd will then start syncing from checkpoints.
 - If you are using the CLI wallet, then you can just wait for it to finish syncing, and open your wallet.
 - If you are using a GUI wallet, let it finish syncing, close it down by typing `exit` in the window, then open your GUI wallet.
 
-### Common Errors
+Once the synchronisation is finished you should see a message like this:
+
+![Sync done](https://wiki.bloc.money/service-operators/images/checkpoints-final.png)
+
+### **Common Errors**
 
 #### Invalid checkpoint file format
 
@@ -86,7 +99,7 @@ If you did the steps correctly, you should see something like this output.
 #### BLOCd.exe is not recognized / No such file or directory
 
 ```
-C:\Users\gentoo>BLOCd.exe --load-checkpoints checkpoints.csv
+C:\Users\username>BLOCd.exe --load-checkpoints checkpoints.csv
 'BLOCd.exe' is not recognized as an internal or external command,
 operable program or batch file.
 ```
@@ -99,7 +112,7 @@ operable program or batch file.
 - If you type `ls`, you should see the BLOCd program, if you are in the correct folder:
 
 ```
-[BLOC]λ ls
+[BLOC] ls
 miner  BLOC-service  BLOCWallet  BLOCd
 ```
 
