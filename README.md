@@ -4,6 +4,7 @@ Since versions 3+ you can sync a fresh chain from 0 much quicker by loading "che
 ## **How to synchronise the blockchain faster and better**
 
 Download the complete checkpoints list from the [BLOC-checkpoints GitHub repository](https://github.com/furiousteam/BLOC-checkpoints)
+
 **This list is updated automatically every day at 12 am (UTC+1)**
 
 ## **Setup**
