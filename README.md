@@ -127,3 +127,9 @@ miner  BLOC-service  BLOCWallet  BLOCd
 - If you see output like the above, something else has got the database open already.
 - Make sure you have closed down any other BLOCd's, GUI wallets, and BLOC-service.
 - Use a task manager to help you find any which might be running in the background, then try again.
+
+### About BLOC
+
+If this is your first time hearing about BLOC, we recommend starting by visiting the official [BLOC.MONEY](https://bloc.money) website and/or the [BLOC Wiki](https://wiki.bloc.money)
+
+[![BLOC](https://wiki.bloc.money/images/BLOC-in-out_blue.gif)](https://bloc.money)
